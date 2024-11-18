@@ -1,3 +1,51 @@
 /* 
     General Styles
 */
+
+body {
+    background: rgb(20, 30, 164);
+    background: linear-gradient(90deg, rgba(20, 30, 164, 1) 0%, rgba(0, 255, 244, 1) 100%);
+}
+
+.navbar {
+    border-bottom: 2px solid;
+    border-color: black;
+}
+
+.sinContactos {
+    margin: auto;
+    text-align: center;
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+a {
+    text-decoration: none;
+    color: black
+}
+
+a:hover {
+    color: black;
+}
+
+.card {
+    font-weight: bold;
+    color: white;
+    background: rgb(85, 85, 85);
+    background: linear-gradient(90deg, rgba(85, 85, 85, 1) 0%, rgba(0, 0, 0, 1) 100%);
+}
+
+.botoncin{
+    background-color: slategrey;
+}
+
+.botoncin:hover{
+    background-color: red;
+}
+
+.formulario{
+    border: 5px solid;
+    border-color: chocolate;
+    width: 15rem;
+    margin: auto;
+}
