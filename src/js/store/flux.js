@@ -15,8 +15,13 @@ const getState = ({ getStore, getActions, setStore }) => {
 					initial: "white"
 				}
 			],
-			contactos:[]
+
+			contactos: [],
+
+			newcontact: false
+
 		},
+
 		actions: {
 			// Use getActions to call a function within a fuction
 			exampleFunction: () => {
@@ -45,9 +50,14 @@ const getState = ({ getStore, getActions, setStore }) => {
 			getContactos: () => {
 				fetch("https://playground.4geeks.com/contact/agendas/AlvaroContacts")
 					.then(response => response.json())
-					.then(response => setStore({"contactos" : response.contacts}))
-				
+					.then(response => setStore({ "contactos": response.contacts }))
+			},
+
+			actualizador: () =>{
+				setStore({newcontact:(prev => !prev)})
 			}
+
+
 		}
 	};
 };
